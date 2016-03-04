@@ -5,7 +5,7 @@ int Hello()
 }
 int main()
 {
-	printf("hello tejendra");
+	printf("hello Mradul Jain");
 	Hello();
 	
 }
