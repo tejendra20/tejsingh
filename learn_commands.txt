@@ -1,0 +1,40 @@
+find ansible -type f -print -exec cat {} \; | grep "Bright"
+
+ssh -i ~/.ssh/mjain.pem mjain@coneng2.idavatars.com
+
+cd /var/lib/datomic/runtime
+bin/console -p 8001 dev datomic:dev://localhost:4334/geppetto-admin
+
+sudo ./gep provision -u=mjain -t=coneng2 --push=admin --tags=admin -k=~/.ssh/mjain.pem
+
+http://alvinalexander.com/unix/edu/examples/find.shtml
+http://www.learndatalogtoday.org
+http://www.jamesward.com/2012/05/08/play-2-java-tutorial
+
+# for admin (need to be in admin dir)
+sudo /etc/init.d/admin stop
+/opt/play/activator ~"run 9090"
+ 
+sudo add-apt-repository ppa:openjdk-r/ppa
+sudo apt-get update
+sudo apt-get install openjdk-8-jdk
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
+
+http://cloudmesh.github.io/introduction_to_cloud_computing/class/lesson/ansible.html
+https://adamcod.es/2014/09/23/vagrant-ansible-quickstart-tutorial.html
+https://sysadmincasts.com/episodes/47-zero-downtime-deployments-with-ansible-part-4-4
+https://portal.futuresystems.org/user/register
+https://www.vagrantup.com/docs/getting-started/
+http://www.jeffgeerling.com/blog/yaml-best-practices-ansible-playbooks-tasks
+
+
+sudo apt-get remove --purge mysql-server mysql-client mysql-common
+sudo apt-get autoremove
+sudo apt-get autoclean
+sudo rm -rf /var/lib/mysql
+
+https://github.com/typesafehub/ssl-config
+
+https://github.com/edulify/play-hikaricp.edulify.com/tree/1.5.0
+http://askubuntu.com/questions/235880/how-to-fix-gpg-in-updater
